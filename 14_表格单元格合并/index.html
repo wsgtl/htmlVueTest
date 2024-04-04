@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>合并单元格6和7 colspan 水平合并，保留左边，删除右边</p>
+    <p>合并单元格15和20 rowspan 垂直合并，保留上边，删除下边</p>
+    <table border="1" width="400px" height="400px">
+        <tr>
+            <td>原神1</td>
+            <td>原神2</td>
+            <td>原神3</td>
+            <td>原神4</td>
+            <td>原神5</td>
+        </tr>
+        <tr>
+            <td colspan="2">原神6 7</td>
+            <!-- <td>原神7</td>得删掉，不然会凸出 -->
+            <td>原神8</td>
+            <td>原神9</td>
+            <td>原神10</td>
+        </tr>
+        <tr>
+            <td>原神11</td>
+            <td>原神12</td>
+            <td rowspan="3">原神13 18 23</td>
+            <td>原神14</td>
+            <td rowspan="2">原神15 20</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">原神16 17 21 22</td>
+            <!-- <td>原神17</td> -->
+            <!-- <td>原神18</td> -->
+            <td>原神19</td>
+            <!-- <td>原神20</td> -->
+        </tr>
+        <tr>
+            <!-- <td>原神21</td>
+            <td>原神22</td> -->
+            <!-- <td>原神23</td> -->
+            <td>原神24</td>
+            <td>原神25</td>
+        </tr>
+    </table>
+</body>
+</html>
