@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "37350391",
+      "name": "风车",
+      "font_class": "fengche",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "37381890",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    }
+  ]
+}

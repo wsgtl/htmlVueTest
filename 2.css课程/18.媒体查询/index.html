@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        @media  screen and (max-width:768px) {/*手机*/
+            .box{
+                background-color: aqua;
+            }
+            .p1{
+                display:none;
+            }
+            .p2{
+                display:block;
+            }
+        }
+        @media  screen and (min-width:768px) and (max-width:996px) {/*平板*/
+            .box{
+                background-color: purple;
+            }
+            .p2{
+                display: block;
+            }
+        }
+        @media  screen and (min-width:996px)  {/*电脑*/
+            .box{
+                background-color: gray;
+            }
+            .p1{
+                display: block;
+            }
+            .p1{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p class="p1">丁真1</p>
+    <p class="p2">丁真2</p>
+</body>
+</html>

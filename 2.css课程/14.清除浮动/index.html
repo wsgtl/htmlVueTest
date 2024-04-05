@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 30px;
+            background-color: red;
+        }
+        .text {
+            width: 100px;
+            height: 300px;
+            background-color: green;
+            /*受影响元素增加clear元素*/
+            clear:both
+        }
+
+
+       
+        .container {
+            /* width: 800px;*/
+             /* 父元素设置高度清除浮动 */
+           /* height: 900px;  */
+            background-color: #666;
+             /*父级增加overflow清除浮动,用的最多*/
+            /* overflow: hidden; */          
+            /* clear:both; */
+
+        }
+         /*伪对象*/
+         .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    浮动副作用，设置浮动后，脱离文档流向左或向右浮动，
+    浮动元素造成父元素高度塌陷，会影响后面的元素
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="text"></div> -->
+    </div>
+    <div class="text"></div>
+</body>
+
+</html>
