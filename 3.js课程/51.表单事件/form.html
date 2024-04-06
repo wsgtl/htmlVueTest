@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm" onsubmit="submitHandle">
+        <input type="text" >
+        <button id="reset">重置</button>
+        <button>提交表单</button>
+    </form>
+
+    <script>
+        const reset=document.getElementById("reset")
+        const myForm=document.getElementById("myForm")
+        reset.onclick=()=>{
+            myForm.reset();//触发在表单上：清空表单
+        }
+        function submitHandle(){
+            console.log("想做的是")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var allstr="hello world"
+        var str="llo"
+        console.log(allstr.includes(str))//true
+        console.log(allstr.startsWith(str))//false
+        console.log(allstr.endsWith("ld"))//true
+
+        console.log("x".repeat(3))//重复多次
+        console.log("wodd".repeat(4))//重复多次
+
+        var h="hello";//补全方法
+        console.log(h.padStart(10,"ab"));//ababahello
+        console.log(h.padEnd(10,"ab"));//helloababa
+
+
+        var it="   itbardd    ";//去除空格
+        console.log(it.trim())//全去
+        console.log(it.trimEnd())//去尾部
+        console.log(it.trimStart())//去前面空格
+
+
+        var myIt="ithekjekj"
+        console.log(myIt.at(3))
+        console.log(myIt.at(-3))
+    </script>
+</body>
+</html>

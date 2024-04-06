@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">导航</div>
+
+    <script>
+        const text=document.createElement("p");
+        const content = document.createTextNode("我是文本");
+        const id=document.createAttribute("id");
+        id.value="root";
+        text.appendChild(content);
+        const nav=document.getElementsByClassName("nav")[0]
+        nav.appendChild(text);
+        text.setAttributeNode(id);
+        console.log(text);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h3>哈韩</h3>
+    <h3>哈韩</h3>
+    <h3>哈韩</h3>
+    <h3>哈韩</h3>
+    <h3>哈韩</h3>
+    <h3>哈韩</h3>
+    <h3>哈韩</h3>
+    <h3>哈韩</h3>
+    <script>
+        function debounce(fn,delay){//防抖函数
+            let timer=null;
+            return function(){
+                if(timer){
+                    clearTimeout(timer);
+                }
+                timer=setTimeout(fn,delay);
+            }
+        }
+        const scrollHandle=()=>{
+            // console.log("页面滚动了")
+            const y=document.documentElement.scrollTop
+            console.log(y)//输出滚动高度,频率太高了
+
+        }
+        //滚动事件
+        window.onscroll=debounce(scrollHandle,200)
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <input type="text" id="password">
+
+    <script>
+        const username=document.getElementById("username")
+        const password=document.getElementById("password")
+        username.oninput=(e)=>{//改变输入同时就触发
+            console.log(e.target.value)
+        }
+
+        username.onselect=()=>{
+            console.log("选中了")
+        }
+        password.onchange=(e)=>{//按回车或失去焦点，改变输入才就触发
+            console.log(e.target.value)
+        }
+    </script>
+</body>
+</html>

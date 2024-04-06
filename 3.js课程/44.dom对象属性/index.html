@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .haha{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="root">我是丁真的等 </div>
+
+    <script>
+        const root=document.getElementById("root")
+        root.id="ccc"
+        root.className="haha"
+        console.log(root)
+        root.innerHTML+="<h3>我草丁真</h3>"
+        root.innerText+="<h3>我草丁真</h3>"
+    </script>
+</body>
+</html>

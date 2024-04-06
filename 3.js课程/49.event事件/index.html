@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">点击</button>
+
+    <a href="https://www.baidu.com" id="a">去百度</a>
+
+    <div id="root">
+        <div id="box"></div>
+    </div>
+    <script>
+        const btn=document.getElementById("btn")
+        btn.onclick=(e)=>{
+            e.target.innerHTML="点击之后"
+            console.log(e.type)
+        }
+        const a=document.getElementById("a")
+        a.onclick=(e)=>{
+            e.preventDefault();//阻止默认事件
+            e.target.innerHTML="点击之后a"
+        }
+        const root=document.getElementById("root")
+        root.onclick=(e)=>{
+           console.log("root")
+        }
+        const box=document.getElementById("box")
+        box.onclick=(e)=>{
+            e.stopPropagation();//阻止事件冒泡
+            console.log("box")
+        }
+    </script>
+</body>
+</html>

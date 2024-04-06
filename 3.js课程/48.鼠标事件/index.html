@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 30px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1" >单击</button>
+    <button id="btn2" >双击</button>
+    <button id="btn3" >按下</button>
+    <button id="btn4" >抬起</button>
+    <button id="btn5" >鼠标移动事件</button>
+    <button id="btn6" >进入</button>
+    <button id="btn7" >离开</button>
+    <button id="btn8" >滚轮</button>
+
+    <script>
+        document.getElementById("btn1").onclick=()=>{
+            console.log("点击一次1")
+        }
+        document.getElementById("btn2").ondblclick=()=>{
+            console.log("双击2")
+        }
+        document.getElementById("btn3").onmousedown=()=>{
+            console.log("按下")
+        }
+        document.getElementById("btn4").onmouseup=()=>{
+            console.log("抬起")
+        }
+        document.getElementById("btn5").onmousemove=()=>{
+            console.log("移动")
+        }
+        document.getElementById("btn6").onmouseenter=()=>{
+            console.log("进入")
+        }
+        document.getElementById("btn7").onmouseleave=()=>{
+            console.log("离开")
+        }
+        document.getElementById("btn8").onwheel=()=>{
+            console.log("滚轮")
+        }
+    </script>
+</body>
+</html>

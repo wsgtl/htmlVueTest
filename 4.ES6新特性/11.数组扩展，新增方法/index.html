@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>标题1</h3>
+    <h3>标题2</h3>
+    <h3>标题3</h3>
+    <script>
+        //类数组，伪数组，只能使用数组的读取方式和length属性，不能使用数组方法
+        function add(){
+            console.log(arguments)
+
+            // arguments.push(133);//报错
+            var re=Array.from(arguments)//转成真正数组
+            re.push(40)
+            console.log(re)
+        }
+        add(1,2,3)
+
+        //元素集合伪数组
+        let ti=document.querySelectorAll("h3")
+        console.log(ti)
+        console.log(Array.from(ti))//转成真正数组
+
+        //类似数组
+        var user={
+            "0":"33cv",
+            "1":33,
+            "2":3390,
+            length:3
+        }
+        console.log(user.length)
+        console.log(Array.from(user))//转成真正数组
+
+        //array.of将一组值转成数组
+        console.log(Array.of(3,4,5))
+    </script>
+</body>
+</html>

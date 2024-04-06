@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user={
+            name:"蔡徐坤",
+            age:20
+        }
+        // const name=user.name;//直接拿值，麻烦点
+        // const age=user.age;
+        //利用解构赋值讲话她
+        const {name,age}=user;
+        console.log(name,age)
+        //必须同名，不然不行
+        const {a1,b1}=user;
+        console.log(a1,b1)
+        //可拿取方法
+        const {log}=console;
+        log(name,age);
+        const {abs,min,max}=Math;
+        
+    </script>
+</body>
+</html>
